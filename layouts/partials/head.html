@@ -49,8 +49,10 @@
 
     <link rel="canonical" href="{{ .URL | relURL }}">
 
+    {{ if and (not (eq .Site.DisqusShortname "")) (not .Params.disable_comments) }}
     <link rel="stylesheet" href="{{ "css/iDisqus.min.css" | relURL }}"/>
-	
+
+    {{ end }}
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{{ "css/bootstrap.min.css" | relURL }}">
 
