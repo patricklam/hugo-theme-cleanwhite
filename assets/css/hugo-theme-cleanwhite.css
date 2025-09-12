@@ -199,7 +199,7 @@ pre code{
         float:right;
         margin:0
     }
-    #huxblog_navbar{
+    #navbarNav{
         opacity:0;
         transform:scaleX(0);
         transform-origin:top right;
@@ -208,11 +208,11 @@ pre code{
         -webkit-transform-origin:top right;
         -webkit-transition:all .25s cubic-bezier(0.23,1,.32,1)
     }
-    #huxblog_navbar a{
+    #navbarNav a{
         font-size:13px;
         line-height:28px
     }
-    #huxblog_navbar .navbar-collapse{
+    #navbarNav .navbar-collapse{
         height:0;
         transform:scaleY(0);
         transform-origin:top right;
@@ -221,21 +221,21 @@ pre code{
         -webkit-transform-origin:top right;
         -webkit-transition:-webkit-transform 500ms cubic-bezier(0.23,1,.32,1)
     }
-    #huxblog_navbar li{
+    #navbarNav li{
         opacity:0;
         transition:opacity 450ms cubic-bezier(0.23,1,.32,1) 205ms;
         -webkit-transition:opacity 450ms cubic-bezier(0.23,1,.32,1) 205ms
     }
-    #huxblog_navbar.in{
+    #navbarNav.in{
         transform:scaleX(1);
         -webkit-transform:scaleX(1);
         opacity:1
     }
-    #huxblog_navbar.in .navbar-collapse{
+    #navbarNav.in .navbar-collapse{
         transform:scaleY(1);
         -webkit-transform:scaleY(1)
     }
-    #huxblog_navbar.in li{
+    #navbarNav.in li{
         opacity:1
     }
 }
@@ -247,7 +247,7 @@ pre code{
     left:0;
     width:100%;
     z-index:3;
-    font-family:-apple-system,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family:-apple-system,"Helvetica Neue",Arial,sans-serif;
     line-height:1.7
 }
 .navbar-custom .navbar-brand{
@@ -259,14 +259,15 @@ pre code{
 .navbar-custom .navbar-brand:hover{
     color:rgba(255,255,255,.8)
 }
-.navbar-custom .nav li a{
+.navbar-custom li a{
     text-transform:uppercase;
     font-size:12px;
     line-height:20px;
     font-weight:800;
-    letter-spacing:1px
+    letter-spacing:1px;
+    text-decoration:none
 }
-.navbar-custom .nav li a:active{
+.navbar-custom li a:active{
     background:rgba(0,0,0,.12)
 }
 @media only screen and (min-width:768px){
@@ -285,14 +286,14 @@ pre code{
     .navbar-custom .navbar-brand:hover,.navbar-custom .navbar-brand:focus{
         color:rgba(255,255,255,.8)
     }
-    .navbar-custom .nav li a{
+    .navbar-custom li a{
         color:#fff;
         padding:20px
     }
-    .navbar-custom .nav li a:hover,.navbar-custom .nav li a:focus{
+    .navbar-custom li a:hover,.navbar-custom li a:focus{
         color:rgba(255,255,255,.8)
     }
-    .navbar-custom .nav li a:active{
+    .navbar-custom li a:active{
         background:0 0
     }
 }
@@ -308,10 +309,10 @@ pre code{
 .navbar-custom.invert .navbar-brand:hover,.navbar-custom.invert .navbar-brand:focus{	
     color:#0085a1	
 }	
-.navbar-custom.invert .nav li a{	
+.navbar-custom.invert li a{	
     color:#404040	
 }	
-.navbar-custom.invert .nav li a:hover,.navbar-custom.invert .nav li a:focus{	
+.navbar-custom.invert li a:hover,.navbar-custom.invert li a:focus{	
     color:#0085a1	
 }
 @media only screen and (min-width:1170px){
@@ -342,10 +343,10 @@ pre code{
     .navbar-custom.is-fixed .navbar-brand:hover,.navbar-custom.is-fixed .navbar-brand:focus{
         color:#0085a1
     }
-    .navbar-custom.is-fixed .nav li a{
+    .navbar-custom.is-fixed li a{
         color:#404040
     }
-    .navbar-custom.is-fixed .nav li a:hover,.navbar-custom.is-fixed .nav li a:focus{
+    .navbar-custom.is-fixed li a:hover,.navbar-custom.is-fixed li a:focus{
         color:#0085a1
     }
     .navbar-custom.is-visible{
